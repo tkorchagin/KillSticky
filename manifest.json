@@ -1,0 +1,25 @@
+{
+    "manifest_version": 3,
+    "name": "Kill Sticky",
+    "version": "1.1",
+    "description": "Removes sticky/fixed elements and restores page scrolling. Activate by clicking the icon or pressing Ctrl+K/Cmd+K.",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "action": {
+        "default_title": "Remove Sticky Elements (Kill Sticky)"
+    },
+    "commands": {
+        "execute_kill_sticky": {
+            "suggested_key": {
+                "default": "Ctrl+K",
+                "mac": "Command+K"
+            },
+            "description": "Remove sticky elements from the current page"
+        }
+    }
+}
